@@ -23,12 +23,19 @@ public class Player : MonoBehaviour
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
             {
-                if (agent.SetDestination(hit.point));
-             
+                if (agent.SetDestination(hit.point))
+                {
+       
+                }
+
+
             }
             
+
         }
-        //agent.SetDestination(cube.transform.position);
-        
+
+
+
+
     }
 }
